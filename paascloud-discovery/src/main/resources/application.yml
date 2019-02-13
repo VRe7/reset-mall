@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: native
+    # active: dev
+  application:
+    name: @pom.artifactId@
+  rabbitmq:
+    host: paascloud-mq-rabbit
+    port: 5672
+    username: user
+    password: user
+  boot:
+    admin:
+      username: admin
+      password: admin
+
+security:
+  user:
+    name: admin
+    password: admin
+
+info:
+  Software copyright: Quickly build distributed micro-service platform
+  About us: http://paascloud.net
