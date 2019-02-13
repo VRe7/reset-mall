@@ -13,9 +13,7 @@ package com.paascloud.security.server;
 
 import com.paascloud.security.app.authentication.openid.OpenIdAuthenticationSecurityConfig;
 import com.paascloud.security.core.authentication.FormAuthenticationConfig;
-import com.paascloud.security.core.authentication.mobile.SmsCodeAuthenticationSecurityConfig;
 import com.paascloud.security.core.authorize.AuthorizeConfigManager;
-import com.paascloud.security.core.validate.code.ValidateCodeSecurityConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -56,12 +54,6 @@ public class PcResourceServerConfig extends ResourceServerConfigurerAdapter {
 	protected AuthenticationFailureHandler pcAuthenticationFailureHandler;
 
 	@Autowired
-	private SmsCodeAuthenticationSecurityConfig smsCodeAuthenticationSecurityConfig;
-
-	@Autowired
-	private ValidateCodeSecurityConfig validateCodeSecurityConfig;
-
-	@Autowired
 	private SpringSocialConfigurer pcSocialSecurityConfig;
 
 	@Autowired
@@ -100,10 +92,7 @@ public class PcResourceServerConfig extends ResourceServerConfigurerAdapter {
 	public void configure(HttpSecurity http) throws Exception {
 		formAuthenticationConfig.configure(http);
 		http.headers().frameOptions().disable();
-		http.apply(validateCodeSecurityConfig)
-				.and()
-				.apply(smsCodeAuthenticationSecurityConfig)
-				.and()
+		http
 				.apply(pcSocialSecurityConfig)
 				.and()
 				.apply(openIdAuthenticationSecurityConfig)
