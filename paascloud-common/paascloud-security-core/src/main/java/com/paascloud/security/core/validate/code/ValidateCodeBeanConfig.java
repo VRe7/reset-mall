@@ -13,8 +13,6 @@ package com.paascloud.security.core.validate.code;
 
 import com.google.code.kaptcha.Producer;
 import com.paascloud.security.core.properties.SecurityProperties;
-import com.paascloud.security.core.validate.code.email.DefaultEmailCodeSender;
-import com.paascloud.security.core.validate.code.email.EmailCodeSender;
 import com.paascloud.security.core.validate.code.sms.DefaultSmsCodeSender;
 import com.paascloud.security.core.validate.code.sms.SmsCodeSender;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -61,17 +59,6 @@ public class ValidateCodeBeanConfig {
 	@ConditionalOnMissingBean(SmsCodeSender.class)
 	public SmsCodeSender smsCodeSender() {
 		return new DefaultSmsCodeSender();
-	}
-
-	/**
-	 * 邮箱验证码发送器
-	 *
-	 * @return sms code sender
-	 */
-	@Bean
-	@ConditionalOnMissingBean(EmailCodeSender.class)
-	public EmailCodeSender emailCodeSender() {
-		return new DefaultEmailCodeSender();
 	}
 
 }

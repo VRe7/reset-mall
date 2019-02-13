@@ -25,9 +25,5 @@ public class ValidateCodeProperties {
 	 * 图片验证码配置
 	 */
 	private ImageCodeProperties image = new ImageCodeProperties();
-	/**
-	 * 邮箱验证码配置
-	 */
-	private EmailCodeProperties email = new EmailCodeProperties();
 
 }
