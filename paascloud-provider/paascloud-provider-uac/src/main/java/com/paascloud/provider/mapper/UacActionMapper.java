@@ -15,7 +15,6 @@ import com.paascloud.core.mybatis.MyMapper;
 import com.paascloud.provider.model.domain.UacAction;
 import com.paascloud.provider.model.domain.UacMenu;
 import com.paascloud.provider.model.dto.user.Perm;
-import com.paascloud.provider.model.vo.ActionVo;
 import com.paascloud.provider.model.vo.MenuVo;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -55,15 +54,6 @@ public interface UacActionMapper extends MyMapper<UacAction> {
 	 * @return the int
 	 */
 	int batchDeleteByIdList(@Param("idList") List<Long> deleteIdList);
-
-	/**
-	 * Query action list with page list.
-	 *
-	 * @param uacAction the uac action
-	 *
-	 * @return the list
-	 */
-	List<ActionVo> queryActionListWithPage(UacAction uacAction);
 
 	/**
 	 * Delete by menu id int.

@@ -13,7 +13,6 @@ package com.paascloud.provider.mapper;
 
 import com.paascloud.core.mybatis.MyMapper;
 import com.paascloud.provider.model.domain.UacUser;
-import com.paascloud.provider.model.dto.user.BindRoleDto;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
@@ -84,14 +83,6 @@ public interface UacUserMapper extends MyMapper<UacUser> {
 	 */
 	int updateUacUser(UacUser user);
 
-	/**
-	 * Select all need bind role list.
-	 *
-	 * @param superManagerRoleId the super manager role id
-	 *
-	 * @return the list
-	 */
-	List<BindRoleDto> selectAllNeedBindRole(@Param("superManagerRoleId") Long superManagerRoleId);
 
 	/**
 	 * Find user info by login name uac user.

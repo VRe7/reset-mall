@@ -148,34 +148,6 @@
         and ua.menu_id = tum.id
         and uu.id = #{userId,jdbcType=BIGINT}
     </select>
-    <select id="queryActionListWithPage" resultType="com.paascloud.provider.model.vo.ActionVo">
-        SELECT
-        <include refid="Base_Column_List">
-            <property name="alias" value="action"></property>
-        </include>
-        ,menu.menu_name as menuName
-        FROM
-          pc_uac_action action LEFT JOIN pc_uac_menu menu
-        ON
-          action.menu_id = menu.id
-        WHERE 1=1
-        <if test="status != null and status != ''">
-            AND action.status = #{status}
-        </if>
-        <if test="actionCode != null and actionCode != ''">
-            AND action.action_code LIKE concat('%',#{actionCode},'%')
-        </if>
-        <if test="actionName != null and actionName != ''">
-            AND action.action_name LIKE concat('%',#{actionName},'%')
-        </if>
-        <if test="url != null and url != ''">
-            AND action.url LIKE concat('%',#{url},'%')
-        </if>
-        <if test="menuId != null and menuId != ''">
-            AND action.menu_id LIKE concat('%',#{menuId},'%')
-        </if>
-        <include refid="Base_OrderBy_Condition"></include>
-    </select>
     <select id="getCheckedActionList" parameterType="long" resultType="java.lang.Long">
         select action_id as menu_id from pc_uac_role_action ra where ra.role_id = #{roleId}
     </select>

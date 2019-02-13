@@ -14,8 +14,6 @@ package com.paascloud.provider.web;
 
 import com.paascloud.base.enums.ErrorCodeEnum;
 import com.paascloud.base.exception.BusinessException;
-import com.paascloud.provider.model.dto.GlobalExceptionLogDto;
-import com.paascloud.provider.service.MdcExceptionLogFeignApi;
 import com.paascloud.wrapper.WrapMapper;
 import com.paascloud.wrapper.Wrapper;
 import lombok.extern.slf4j.Slf4j;
@@ -41,8 +39,6 @@ public class GlobalExceptionHandler {
 	String profile;
 	@Value("${spring.application.name}")
 	String applicationName;
-	@Resource
-	private MdcExceptionLogFeignApi mdcExceptionLogFeignApi;
 
 	/**
 	 * 参数非法异常.
@@ -102,10 +98,6 @@ public class GlobalExceptionHandler {
 	@ResponseBody
 	public Wrapper exception(Exception e) {
 		log.info("保存全局异常信息 ex={}", e.getMessage(), e);
-		taskExecutor.execute(() -> {
-			GlobalExceptionLogDto globalExceptionLogDto = new GlobalExceptionLogDto().getGlobalExceptionLogDto(e, profile, applicationName);
-			mdcExceptionLogFeignApi.saveAndSendExceptionLog(globalExceptionLogDto);
-		});
 		return WrapMapper.error();
 	}
 }
