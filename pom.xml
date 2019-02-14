@@ -25,9 +25,8 @@
 
   <developers>
     <developer>
-      <name>刘兆明</name>
-      <url>https://paascloud.net</url>
-      <email>paascloud.net@gmail.com</email>
+      <name>vnaLc</name>
+      <url>https://www.baidu.com</url>
     </developer>
   </developers>
 
@@ -70,18 +69,31 @@
     </dependency>
   </dependencies>
 
-  <distributionManagement>
+  <!-- 配置aliyun仓库 -->
+  <repositories>
     <repository>
-      <id>paascloud-lib-rep</id>
-      <url>http://139.199.125.217:8081/content/repositories/paascloud-lib-rep/</url>
+      <id>nexus</id>
+      <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
     </repository>
-    <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <name>User Project Snapshot</name>
-      <url>http://139.199.125.217:8081/content/repositories/snapshots/</url>
-      <uniqueVersion>true</uniqueVersion>
-    </snapshotRepository>
-  </distributionManagement>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>nexus</id>
+      <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
 
   <dependencyManagement>
     <dependencies>
@@ -296,27 +308,11 @@
         <artifactId>aliyun-java-sdk-dysmsapi</artifactId>
         <version>1.1.0</version>
       </dependency>
-      <!-- https://mvnrepository.com/artifact/com.aliyun.mns/aliyun-sdk-mns -->
-      <dependency>
-        <groupId>com.aliyun.mns</groupId>
-        <artifactId>aliyun-sdk-mns</artifactId>
-        <version>1.1.8.4</version>
-      </dependency>
-      <dependency>
-        <groupId>com.aliyun.mns</groupId>
-        <artifactId>alicom-mns-receive-sdk</artifactId>
-        <version>1.0</version>
-      </dependency>
 
       <dependency>
         <groupId>org.apache.rocketmq</groupId>
         <artifactId>rocketmq-client</artifactId>
         <version>${rocketmq.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.qiniu</groupId>
-        <artifactId>qiniu-java-sdk</artifactId>
-        <version>[7.0.0, 7.2.99]</version>
       </dependency>
       <!-- alipay start-->
       <dependency>
