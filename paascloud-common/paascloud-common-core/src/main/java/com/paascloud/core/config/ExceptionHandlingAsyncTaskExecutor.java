@@ -1,14 +1,3 @@
-/*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
- * 类名称：ExceptionHandlingAsyncTaskExecutor.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
- */
-
 package com.paascloud.core.config;
 
 import lombok.extern.slf4j.Slf4j;
@@ -19,11 +8,7 @@ import org.springframework.core.task.AsyncTaskExecutor;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Future;
 
-/**
- * The class Exception handling async task executor.
- *
- * @author paascloud.net @gmail.com
- */
+
 @Slf4j
 public class ExceptionHandlingAsyncTaskExecutor implements AsyncTaskExecutor, InitializingBean, DisposableBean {
 

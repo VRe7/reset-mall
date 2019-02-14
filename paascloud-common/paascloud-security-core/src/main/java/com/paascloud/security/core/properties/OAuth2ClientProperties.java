@@ -3,9 +3,10 @@ package com.paascloud.security.core.properties;
 import lombok.Data;
 
 /**
- * 认证服务器注册的第三方应用配置项
- *
- * @author paascloud.net @gmail.com
+ * description: 认证服务器注册的第三方应用配置项<br>
+ * version: 1.0 <br>
+ * date: 2019/2/14 10:24 <br>
+ * author: vnaLc <br>
  */
 @Data
 public class OAuth2ClientProperties {

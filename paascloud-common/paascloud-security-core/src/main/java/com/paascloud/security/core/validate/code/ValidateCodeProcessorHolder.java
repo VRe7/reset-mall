@@ -1,14 +1,3 @@
-/*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
- * 类名称：ValidateCodeProcessorHolder.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
- */
-
 package com.paascloud.security.core.validate.code;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,9 +6,10 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 
 /**
- * 校验码处理器管理器
- *
- * @author paascloud.net @gmail.com
+ * description: 校验码处理器管理器<br>
+ * version: 1.0 <br>
+ * date: 2019/2/14 10:28 <br>
+ * author: vnaLc <br>
  */
 @Component
 public class ValidateCodeProcessorHolder {

@@ -10,11 +10,7 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 import java.util.Date;
 
-/**
- * The class Uac user token.
- *
- * @author paascloud.net @gmail.com
- */
+
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Alias(value = "uacUserToken")

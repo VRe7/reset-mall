@@ -4,11 +4,7 @@ import com.paascloud.core.mybatis.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-/**
- * The class Uac user menu.
- *
- * @author paascloud.net@gmail.com
- */
+
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class UacUserMenu extends BaseEntity {

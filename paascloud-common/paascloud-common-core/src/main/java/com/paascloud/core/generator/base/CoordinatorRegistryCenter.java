@@ -3,9 +3,10 @@ package com.paascloud.core.generator.base;
 import java.util.List;
 
 /**
- * 用于协调分布式服务的注册中心.
- *
- * @author zhangliang
+ * description: 用于协调分布式服务的注册中心<br>
+ * version: 1.0 <br>
+ * date: 2019/2/14 10:11 <br>
+ * author: vnaLc <br>
  */
 public interface CoordinatorRegistryCenter extends RegistryCenter {
 

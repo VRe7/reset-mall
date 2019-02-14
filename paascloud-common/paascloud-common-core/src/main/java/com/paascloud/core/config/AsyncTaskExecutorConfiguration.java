@@ -1,14 +1,3 @@
-/*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
- * 类名称：AsyncTaskExecutorConfiguration.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
- */
-
 package com.paascloud.core.config;
 
 import com.paascloud.config.properties.PaascloudProperties;
@@ -27,12 +16,13 @@ import javax.annotation.Resource;
 import java.util.concurrent.Executor;
 
 /**
+ * description:
  * 通过实现AsyncConfigurer自定义线程池,包含异常处理
  * 对线程池更加细粒度的控制
- * (开启异常线程池)
- * The class Async config.
- *
- * @author paascloud.net @gmail.com
+ * (开启异常线程池)<br>
+ * version: 1.0 <br>
+ * date: 2019/2/14 10:10 <br>
+ * author: vnaLc <br>
  */
 @Configuration
 @EnableAsync

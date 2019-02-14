@@ -13,11 +13,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
 
-/**
- * The class Cookie util.
- *
- * @author paascloud.net@gmail.com
- */
+
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class CookieUtil {
 

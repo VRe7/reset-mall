@@ -13,11 +13,7 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 
-/**
- * The class Rest client details service.
- *
- * @author paascloud.net @gmail.com
- */
+
 @Slf4j
 @Component("restClientDetailsService")
 public class RestClientDetailsServiceImpl implements ClientDetailsService {

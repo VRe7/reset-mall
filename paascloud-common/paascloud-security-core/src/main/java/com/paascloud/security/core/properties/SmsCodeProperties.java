@@ -2,11 +2,7 @@ package com.paascloud.security.core.properties;
 
 import lombok.Data;
 
-/**
- * The class Sms code properties.
- *
- * @author paascloud.net @gmail.com
- */
+
 @Data
 public class SmsCodeProperties {
 

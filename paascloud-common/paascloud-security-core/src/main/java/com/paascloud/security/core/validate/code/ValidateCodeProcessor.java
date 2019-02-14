@@ -3,9 +3,11 @@ package com.paascloud.security.core.validate.code;
 import org.springframework.web.context.request.ServletWebRequest;
 
 /**
- * 校验码处理器，封装不同校验码的处理逻辑
- *
- * @author paascloud.net @gmail.com
+ * description: 校验码处理器,
+ * 封装不同校验码的处理逻辑<br>
+ * version: 1.0 <br>
+ * date: 2019/2/14 10:28 <br>
+ * author: vnaLc <br>
  */
 public interface ValidateCodeProcessor {
 

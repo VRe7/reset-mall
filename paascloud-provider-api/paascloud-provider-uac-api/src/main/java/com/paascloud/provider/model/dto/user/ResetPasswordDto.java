@@ -1,14 +1,3 @@
-/*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
- * 类名称：ResetPasswordDto.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
- */
-
 package com.paascloud.provider.model.dto.user;
 
 import io.swagger.annotations.ApiModel;
@@ -18,9 +7,10 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * 重置密码.
- *
- * @author paascloud.net@gmail.com
+ * description: 重置密码<br>
+ * version: 1.0 <br>
+ * date: 2019/2/14 11:20 <br>
+ * author: vnaLc <br>
  */
 @Data
 @ApiModel

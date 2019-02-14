@@ -12,11 +12,7 @@ import org.springframework.stereotype.Component;
 import javax.annotation.Resource;
 import java.util.Collection;
 
-/**
- * The class Uac user details service.
- *
- * @author paascloud.net @gmail.com
- */
+
 @Component
 public class UacUserDetailsServiceImpl implements UserDetailsService {
 

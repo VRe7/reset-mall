@@ -1,14 +1,3 @@
-/*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
- * 类名称：SecurityUser.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
- */
-
 package com.paascloud.security.core;
 
 import org.apache.commons.lang3.StringUtils;
@@ -17,11 +6,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 
-/**
- * The class Security user.
- *
- * @author paascloud.net @gmail.com
- */
+
 public class SecurityUser implements UserDetails {
 	private static final long serialVersionUID = 4872628781561412463L;
 

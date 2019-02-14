@@ -3,11 +3,7 @@ package com.paascloud.security.core.validate.code;
 import org.springframework.security.core.AuthenticationException;
 
 
-/**
- * The class Validate code exception.
- *
- * @author paascloud.net@gmail.com
- */
+
 public class ValidateCodeException extends AuthenticationException {
 
 

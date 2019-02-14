@@ -14,9 +14,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * 生成校验码的请求处理器
- *
- * @author paascloud.net @gmail.com
+ * description: 生成校验码的请求处理器<br>
+ * version: 1.0 <br>
+ * date: 2019/2/14 10:27 <br>
+ * author: vnaLc <br>
  */
 @Slf4j
 @RestController

@@ -22,9 +22,10 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * 校验验证码的过滤器
- *
- * @author paascloud.net @gmail.com
+ * description: 校验验证码的过滤器<br>
+ * version: 1.0 <br>
+ * date: 2019/2/14 10:28 <br>
+ * author: vnaLc <br>
  */
 @Component("validateCodeFilter")
 public class ValidateCodeFilter extends OncePerRequestFilter implements InitializingBean {

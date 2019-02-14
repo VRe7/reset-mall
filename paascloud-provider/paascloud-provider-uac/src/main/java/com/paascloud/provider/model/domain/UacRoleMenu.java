@@ -8,11 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
 
-/**
- * The class Uac role menu.
- *
- * @author paascloud.net@gmail.com
- */
+
 @Data
 @Table(name = "pc_uac_role_menu")
 @Alias(value = "uacRoleMenu")

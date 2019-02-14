@@ -22,9 +22,10 @@ import java.util.List;
 
 
 /**
- * The class Pc authorization server config.
- *  授权服务器配置
- * @author paascloud.net @gmail.com
+ * description: 授权服务器配置<br>
+ * version: 1.0 <br>
+ * date: 2019/2/14 11:17 <br>
+ * author: vnaLc <br>
  */
 @Configuration
 @EnableAuthorizationServer //开启授权服务

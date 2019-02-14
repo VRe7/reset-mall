@@ -3,9 +3,10 @@ package com.paascloud.security.core.validate.code;
 import com.paascloud.security.core.properties.SecurityConstants;
 
 /**
- * 校验码类型
- *
- * @author paascloud.net @gmail.com
+ * description: 校验码类型<br>
+ * version: 1.0 <br>
+ * date: 2019/2/14 10:29 <br>
+ * author: vnaLc <br>
  */
 public enum ValidateCodeType {
 

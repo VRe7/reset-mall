@@ -26,11 +26,7 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 
-/**
- * The class Uac user service.
- *
- * @author paascloud.net@gmail.com
- */
+
 @Service
 @Transactional(rollbackFor = Exception.class)
 public class UacUserServiceImpl extends BaseService<UacUser> implements UacUserService {

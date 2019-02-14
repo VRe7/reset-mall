@@ -10,11 +10,6 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 import java.util.List;
 
-/**
- * The class Uac group.
- *
- * @author paascloud.net@gmail.com
- */
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Table(name = "pc_uac_group")

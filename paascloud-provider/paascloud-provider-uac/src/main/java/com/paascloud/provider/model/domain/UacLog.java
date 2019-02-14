@@ -12,11 +12,7 @@ import javax.persistence.Column;
 import javax.persistence.Table;
 import java.util.Date;
 
-/**
- * The class Uac log.
- *
- * @author paascloud.net@gmail.com
- */
+
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Table(name = "pc_uac_log")

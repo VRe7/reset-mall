@@ -1,10 +1,6 @@
 package com.paascloud.security.core.properties;
 
-/**
- * The interface Security constants.
- *
- * @author paascloud.net@gmail.com
- */
+
 public interface SecurityConstants {
 
 

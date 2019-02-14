@@ -14,9 +14,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * APP环境下认证失败处理器
- *
- * @author paascloud.net @gmail.com
+ * description: APP环境下认证失败处理器<br>
+ * version: 1.0 <br>
+ * date: 2019/2/14 11:17 <br>
+ * author: vnaLc <br>
  */
 @Component("pcAuthenticationFailureHandler")
 public class PcAuthenticationFailureHandler extends SimpleUrlAuthenticationFailureHandler {

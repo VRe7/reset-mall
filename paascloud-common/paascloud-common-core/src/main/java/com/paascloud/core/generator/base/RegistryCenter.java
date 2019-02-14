@@ -4,9 +4,10 @@ import org.apache.curator.framework.recipes.atomic.AtomicValue;
 import org.apache.curator.retry.RetryNTimes;
 
 /**
- * 注册中心.
- *
- * @author zhangliang
+ * description: 注册中心<br>
+ * version: 1.0 <br>
+ * date: 2019/2/14 10:12 <br>
+ * author: vnaLc <br>
  */
 public interface RegistryCenter {
 

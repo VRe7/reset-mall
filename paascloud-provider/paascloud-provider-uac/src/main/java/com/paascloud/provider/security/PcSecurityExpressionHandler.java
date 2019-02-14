@@ -5,11 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.oauth2.provider.expression.OAuth2WebSecurityExpressionHandler;
 
-/**
- * The class My o auth 2 web security expression handler.
- *
- * @author paascloud.net @gmail.com
- */
+
 @Configuration
 public class PcSecurityExpressionHandler extends OAuth2WebSecurityExpressionHandler {
 	@Bean

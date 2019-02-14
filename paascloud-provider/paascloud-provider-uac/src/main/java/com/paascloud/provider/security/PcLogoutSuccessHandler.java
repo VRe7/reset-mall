@@ -11,10 +11,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * 默认的退出成功处理器，如果设置了paascloud.security.browser.signOutUrl，则跳到配置的地址上，
- * 如果没配置，则返回json格式的响应。
- *
- * @author paascloud.net @gmail.com
+ * description:
+ * 默认的退出成功处理器，如果设置了signOutUrl,则跳到配置的地址上
+ * 如果没配置,则返回json格式的响应。 <br>
+ * version: 1.0 <br>
+ * date: 2019/2/14 11:17 <br>
+ * author: vnaLc <br>
  */
 @Slf4j
 public class PcLogoutSuccessHandler implements LogoutSuccessHandler {

@@ -24,11 +24,7 @@ import javax.annotation.Resource;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * The class Uac action service.
- *
- * @author paascloud.net@gmail.com
- */
+
 @Service
 @Transactional(rollbackFor = Exception.class)
 public class UacActionServiceImpl extends BaseService<UacAction> implements UacActionService {
