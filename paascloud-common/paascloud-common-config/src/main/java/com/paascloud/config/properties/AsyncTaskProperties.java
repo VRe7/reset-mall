@@ -3,6 +3,12 @@ package com.paascloud.config.properties;
 
 import lombok.Data;
 
+/**
+ * description: 线程池维护<br>
+ * version: 1.0 <br>
+ * date: 2019/2/14 13:55 <br>
+ * author: vnaLc <br>
+ */
 @Data
 public class AsyncTaskProperties {
 

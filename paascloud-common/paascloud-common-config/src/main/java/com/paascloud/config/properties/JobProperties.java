@@ -2,6 +2,12 @@ package com.paascloud.config.properties;
 
 import lombok.Data;
 
+/**
+ * description: JOB基类<br>
+ * version: 1.0 <br>
+ * date: 2019/2/14 13:55 <br>
+ * author: vnaLc <br>
+ */
 @Data
 public class JobProperties {
     private JobTask task = new JobTask();
