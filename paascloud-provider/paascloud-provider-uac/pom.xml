@@ -75,11 +75,6 @@
     </dependency>-->
     <!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-client -->
     <dependency>
-      <groupId>org.apache.rocketmq</groupId>
-      <artifactId>rocketmq-client</artifactId>
-      <version>${rocketmq.version}</version>
-    </dependency>
-    <dependency>
       <groupId>de.codecentric</groupId>
       <artifactId>spring-boot-admin-starter-client</artifactId>
     </dependency>

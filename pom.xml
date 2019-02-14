@@ -47,7 +47,7 @@
     <paascloud.version>1.0</paascloud.version>
     <elastic-job.version>2.1.5</elastic-job.version>
     <curator.version>2.10.0</curator.version>
-    <mysql.version>5.1.39</mysql.version>
+    <mysql.version>5.1.47</mysql.version>
     <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
     <maven-javadoc-plugin.version>2.10.4</maven-javadoc-plugin.version>
     <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
@@ -60,6 +60,8 @@
     <modelmapper.version>1.1.2</modelmapper.version>
     <!--<rocketmq.version>4.1.0-incubating</rocketmq.version>-->
     <rocketmq.version>4.2.0</rocketmq.version>
+
+    <docker-maven.version>1.0.0</docker-maven.version>
   </properties>
 
   <dependencies>
@@ -135,15 +137,9 @@
       </dependency>
       <dependency>
         <groupId>com.liuzm.paascloud.common</groupId>
-        <artifactId>paascloud-common-zk</artifactId>
-        <version>${paascloud.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.liuzm.paascloud.common</groupId>
         <artifactId>paascloud-security-app</artifactId>
         <version>${paascloud.version}</version>
       </dependency>
-      <!-- paas cloud end -->
       <!-- swagger cloud start -->
       <dependency>
         <groupId>io.springfox</groupId>
@@ -273,59 +269,10 @@
         <version>${paascloud.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.liuzm.paascloud.provider.api</groupId>
-        <artifactId>paascloud-provider-mdc-api</artifactId>
-        <version>${paascloud.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.liuzm.paascloud.provider.api</groupId>
-        <artifactId>paascloud-provider-omc-api</artifactId>
-        <version>${paascloud.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.liuzm.paascloud.provider.api</groupId>
-        <artifactId>paascloud-provider-tpc-api</artifactId>
-        <version>${paascloud.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.liuzm.paascloud.provider.api</groupId>
-        <artifactId>paascloud-provider-opc-api</artifactId>
-        <version>${paascloud.version}</version>
-      </dependency>
-      <dependency>
         <groupId>org.mybatis</groupId>
         <artifactId>mybatis</artifactId>
         <version>3.4.2</version>
       </dependency>
-
-      <dependency>
-        <groupId>com.aliyun</groupId>
-        <artifactId>aliyun-java-sdk-core</artifactId>
-        <version>3.2.2</version>
-      </dependency>
-      <dependency>
-        <groupId>com.aliyun</groupId>
-        <artifactId>aliyun-java-sdk-dysmsapi</artifactId>
-        <version>1.1.0</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.apache.rocketmq</groupId>
-        <artifactId>rocketmq-client</artifactId>
-        <version>${rocketmq.version}</version>
-      </dependency>
-      <!-- alipay start-->
-      <dependency>
-        <groupId>com.alipay</groupId>
-        <artifactId>alipay-sdk-java</artifactId>
-        <version>20170725114550</version>
-      </dependency>
-      <dependency>
-        <groupId>com.alipay</groupId>
-        <artifactId>alipay-trade-sdk</artifactId>
-        <version>20161215</version>
-      </dependency>
-      <!-- alipay end-->
       <dependency>
         <groupId>org.modelmapper</groupId>
         <artifactId>modelmapper</artifactId>
@@ -443,16 +390,33 @@
   </dependencyManagement>
 
   <build>
+    <finalName>${project.artifactId}</finalName>
     <plugins>
+      <!-- 资源文件拷贝插件 -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.7</version>
+        <configuration>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+      <!-- java编译插件 -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>2.3.2</version>
+        <version>${maven-compiler-plugin.version}</version>
         <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
           <encoding>UTF-8</encoding>
         </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>com.spotify</groupId>
+        <artifactId>docker-maven-plugin</artifactId>
+        <version>${docker-maven.version}</version>
       </plugin>
     </plugins>
   </build>
