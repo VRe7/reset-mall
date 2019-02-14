@@ -36,14 +36,8 @@ import java.util.concurrent.TimeUnit;
 public class UacUserServiceImpl extends BaseService<UacUser> implements UacUserService {
 	@Resource
 	private UacUserMapper uacUserMapper;
-	@Value("${paascloud.auth.active-user-url}")
-	private String activeUserUrl;
 	@Resource
 	private UacActionService uacActionService;
-	@Resource
-	private RedisTemplate<String, Object> redisTemplate;
-	@Resource
-	private TaskExecutor taskExecutor;
 
 	@Override
 	@Transactional(readOnly = true, rollbackFor = Exception.class)

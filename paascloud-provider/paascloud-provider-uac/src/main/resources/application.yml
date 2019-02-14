@@ -6,4 +6,4 @@ spring:
     name: @pom.artifactId@
   datasource:
     username: root
-    password: MasterMysql
+    password: W6ZMm5WLI3wk1AfQ5JkplOkiRYEwCUu84+bxwBD4FxUdK14RvmRWqDjAtvqOHZAhtkrGb/Z/kg6sUs2iFMiXwg==
