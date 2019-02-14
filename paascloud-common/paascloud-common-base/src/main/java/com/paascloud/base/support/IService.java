@@ -1,4 +1,4 @@
-package com.paascloud.core.support;
+package com.paascloud.base.support;
 
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.session.RowBounds;

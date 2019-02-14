@@ -1,18 +1,13 @@
 package com.paascloud.provider.service;
 
-import com.github.pagehelper.PageInfo;
-import com.paascloud.base.dto.LoginAuthDto;
-import com.paascloud.core.support.IService;
-import com.paascloud.provider.model.domain.UacLog;
+import com.paascloud.base.support.IService;
 import com.paascloud.provider.model.domain.UacUser;
-import com.paascloud.provider.model.dto.user.*;
 import com.paascloud.security.core.SecurityUser;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Collection;
-import java.util.List;
 
 
 public interface UacUserService extends IService<UacUser> {
@@ -49,5 +44,5 @@ public interface UacUserService extends IService<UacUser> {
 	 * @param principal the principal
 	 * @param request   the request
 	 */
-	void handlerLoginData(OAuth2AccessToken token, final SecurityUser principal, final HttpServletRequest request);
+//	void handlerLoginData(OAuth2AccessToken token, final SecurityUser principal, final HttpServletRequest request);
 }

@@ -1,6 +1,7 @@
 package com.paascloud.core.support;
 
 import com.paascloud.base.exception.BusinessException;
+import com.paascloud.base.support.IService;
 import com.paascloud.core.generator.IncrementIdGenerator;
 import com.paascloud.core.generator.UniqueIdGenerator;
 import org.apache.ibatis.session.RowBounds;

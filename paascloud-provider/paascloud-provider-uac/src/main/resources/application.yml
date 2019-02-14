@@ -6,4 +6,4 @@ spring:
     name: @pom.artifactId@
   datasource:
     username: root
-    password: W6ZMm5WLI3wk1AfQ5JkplOkiRYEwCUu84+bxwBD4FxUdK14RvmRWqDjAtvqOHZAhtkrGb/Z/kg6sUs2iFMiXwg==
+    password: r/hnbA5RjNdjnL0niIC1xtaGZ2+d8y3P8f4T5kH7ruKGce3KHVMOcfdNjkDEJGcOK/88ybJTl81Nh208I9dGtA==

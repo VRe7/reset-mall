@@ -91,7 +91,7 @@ public class PcAuthenticationSuccessHandler extends SavedRequestAwareAuthenticat
 		SecurityUser principal = (SecurityUser) authentication.getPrincipal();
 
 		// 记录更新日志
-		uacUserService.handlerLoginData(token, principal, request);
+//		uacUserService.handlerLoginData(token, principal, request);
 		log.info("用户【 {} 】记录登录日志", principal.getUsername());
 
 		logger.info("登录成功");

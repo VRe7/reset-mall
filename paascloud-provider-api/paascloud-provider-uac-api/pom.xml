@@ -23,14 +23,19 @@
 	</properties>
 
 	<dependencies>
-        <dependency>
-            <groupId>com.liuzm.paascloud.common</groupId>
-            <artifactId>paascloud-common-util</artifactId>
-        </dependency>
-    <dependency>
-      <groupId>com.github.pagehelper</groupId>
-      <artifactId>pagehelper</artifactId>
-    </dependency>
-  </dependencies>
+		<dependency>
+			<groupId>com.liuzm.paascloud</groupId>
+			<artifactId>paascloud-generator-uac</artifactId>
+			<version>${paascloud.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.liuzm.paascloud.common</groupId>
+			<artifactId>paascloud-common-util</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper</artifactId>
+		</dependency>
+	</dependencies>
 
 </project>
