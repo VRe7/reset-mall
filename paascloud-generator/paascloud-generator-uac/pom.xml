@@ -15,12 +15,12 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.version>4.1.6.RELEASE</spring.version>
-        <!-- MyBatis Generator -->
+        <spring.version>4.3.8.RELEASE</spring.version>
+
         <!-- Java接口和实体类 -->
         <targetJavaProject>${basedir}/src/main/java</targetJavaProject>
-        <targetMapperPackage>com.paascloud.provider.mapper</targetMapperPackage>
         <targetModelPackage>com.paascloud.provider.model.domain</targetModelPackage>
+        <targetMapperPackage>com.paascloud.provider.mapper</targetMapperPackage>
         <!-- XML生成路径 -->
         <targetResourcesProject>${basedir}/src/main/resources</targetResourcesProject>
         <targetXMLPackage>mapper</targetXMLPackage>
